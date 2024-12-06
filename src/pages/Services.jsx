@@ -1,35 +1,42 @@
 import React from "react";
 
+import body_corporate_cleaning_img from "../assets/service_images/body_corporate_cleaning_sample.jpeg"
+import office_cleaning_img from "../assets/service_images/office_cleaning_sample.jpeg"
+import garden_cleaning_img from "../assets/service_images/garden_cleaning_sample.jpeg"
+import high_pressure_cleaning_img from "../assets/service_images/high_pressure_cleaning_sample.jpeg"
+import window_cleaning_img from "../assets/service_images/window_cleaning_sample.jpeg"
+import carpert_cleaning_img from "../assets/service_images/carpert_cleaning_sample.jpeg"
+
 const services = [
     {
         title: "Body Corporate Maintenance",
         description: "Comprehensive maintenance solutions for body corporate properties.",
-        image: "https://via.placeholder.com/150", // Replace with actual image URLs
+        image: body_corporate_cleaning_img, // Replace with actual image URLs
     },
     {
         title: "Commercial Offices Cleaning",
         description: "Professional cleaning services for commercial office spaces.",
-        image: "https://via.placeholder.com/150",
+        image: office_cleaning_img,
     },
     {
         title: "Gardening and Landscaping",
         description: "Expert gardening and landscaping to beautify your property.",
-        image: "https://via.placeholder.com/150",
+        image: garden_cleaning_img,
     },
     {
         title: "Carpet Steam Cleaning",
         description: "Deep steam cleaning to keep your carpets fresh and clean.",
-        image: "https://via.placeholder.com/150",
+        image: carpert_cleaning_img,
     },
     {
         title: "Window Cleaning",
         description: "Sparkling clean windows for residential and commercial properties.",
-        image: "https://via.placeholder.com/150",
+        image: window_cleaning_img,
     },
     {
         title: "High-Pressure Washing",
         description: "Powerful washing for driveways, walls, and outdoor areas.",
-        image: "https://via.placeholder.com/150",
+        image: high_pressure_cleaning_img,
     },
 ];
 
