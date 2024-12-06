@@ -1,7 +1,19 @@
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Services from "./pages/Services.jsx";
+import Contact from "./pages/Contact.jsx";
+
 export default function App() {
     return (
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <>
+            <Home/>
+            <About/>
+            <Services/>
+            <Contact/>
+            <Footer/>
+        </>
+
     )
 }
