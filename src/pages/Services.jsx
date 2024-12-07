@@ -1,5 +1,3 @@
-import React from "react";
-
 import body_corporate_cleaning_img from "../assets/service_images/body_corporate_cleaning_sample.jpeg"
 import office_cleaning_img from "../assets/service_images/office_cleaning_sample.jpeg"
 import garden_cleaning_img from "../assets/service_images/garden_cleaning_sample.jpeg"
