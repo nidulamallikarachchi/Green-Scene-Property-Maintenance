@@ -2,6 +2,7 @@ import group_image from "../assets/group_image.jpg"
 import commercial_cleaning from "../assets/commercial_cleaning.jpg"
 import industrial_cleaning from "../assets/industrial_cleaning.jpg"
 import residential_cleaning from "../assets/residential_cleaning.jpg"
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -39,8 +40,10 @@ const Home = () => {
             </section>
 
             {/* Services Section */}
-            <section className="mt-16 text-left px-4">
-                <h2 className="text-2xl font-semibold text-blue-600">Our Services</h2>
+            <section className="mt-16 text-left px-4 ">
+                <Link to="/services">
+                    <h2 className="text-2xl font-semibold text-blue-600">Our Services</h2>
+                </Link>
                 <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Service 1 */}
                     <div className="border p-4 rounded-lg shadow-lg flex flex-col items-center">
