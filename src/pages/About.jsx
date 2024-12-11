@@ -1,3 +1,5 @@
+import Faxts from "../components/Faxts.jsx";
+
 const About = () => {
     return (
         <div className="container mx-auto mt-10 text-center">
@@ -16,6 +18,7 @@ const About = () => {
                     <li>- Other Specialized Properties</li>
                 </ul>
             </div>
+            <Faxts/>
         </div>
     );
 };
