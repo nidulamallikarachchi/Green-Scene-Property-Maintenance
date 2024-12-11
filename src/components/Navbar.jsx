@@ -47,6 +47,14 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link
+                            to="/property"
+                            className="hover:text-gray-200 transition-colors duration-300 cursor-pointer"
+                        >
+                            Properties
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             to="/contact"
                             className="hover:text-gray-200 transition-colors duration-300 cursor-pointer"
                         >

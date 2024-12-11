@@ -93,17 +93,17 @@ const Home = () => {
             </section>
 
             {/* Contact Section */}
-            <section className="mt-16 text-left px-4">
-                <h2 className="text-2xl font-semibold text-blue-600">Contact Us</h2>
-                <p className="mt-4 text-gray-700">
-                    Call us today at{" "}
-                    <strong className="text-blue-600">045 455 034</strong> or email us at{" "}
-                    <strong className="text-blue-600">service.greenscene@outlook.com</strong>.
-                </p>
-                <p className="mt-4 text-gray-700">
-                    We are always here to help with your property maintenance needs.
-                </p>
-            </section>
+            {/*<section className="mt-16 text-left px-4">*/}
+            {/*    <h2 className="text-2xl font-semibold text-blue-600">Contact Us</h2>*/}
+            {/*    <p className="mt-4 text-gray-700">*/}
+            {/*        Call us today at{" "}*/}
+            {/*        <strong className="text-blue-600">045 455 034</strong> or email us at{" "}*/}
+            {/*        <strong className="text-blue-600">service.greenscene@outlook.com</strong>.*/}
+            {/*    </p>*/}
+            {/*    <p className="mt-4 text-gray-700">*/}
+            {/*        We are always here to help with your property maintenance needs.*/}
+            {/*    </p>*/}
+            {/*</section>*/}
 
         </div>
     );
