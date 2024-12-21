@@ -1,7 +1,7 @@
 import group_image from "../assets/group_image.jpg"
 import commercial_cleaning from "../assets/commercial_cleaning.jpg"
-import industrial_cleaning from "../assets/industrial_cleaning.jpg"
-import residential_cleaning from "../assets/residential_cleaning.jpg"
+import industrial_cleaning from "../assets/industrial_cleaning.webp"
+import residential_cleaning from "../assets/residential_cleaning.webp"
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
                 <img
                     src={group_image} // Replace this with an actual image URL for better effect
                     alt="Property Maintenance"
+                    loading="lazy"
                     className="w-full h-[800px] object-cover rounded-xl"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 text-white rounded-lg">
@@ -50,6 +51,7 @@ const Home = () => {
                         <img
                             src={residential_cleaning}
                             alt="Residential Cleaning"
+                            loading="lazy"
                             className="w-full h-[300px] object-cover rounded-lg"
                         />
                         <h3 className="text-xl font-bold mt-4 text-blue-600">
@@ -65,6 +67,7 @@ const Home = () => {
                         <img
                             src={commercial_cleaning}
                             alt="Commercial Maintenance"
+                            loading="lazy"
                             className="w-full h-[300px] object-cover rounded-lg"
                         />
                         <h3 className="text-xl font-bold mt-4 text-blue-600">
@@ -80,6 +83,7 @@ const Home = () => {
                         <img
                             src={industrial_cleaning}
                             alt="Industrial Services"
+                            loading="lazy"
                             className="w-full h-[300px] object-cover rounded-lg"
                         />
                         <h3 className="text-xl font-bold mt-4 text-blue-600">
