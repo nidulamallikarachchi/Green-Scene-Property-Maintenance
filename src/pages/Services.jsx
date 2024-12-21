@@ -1,9 +1,9 @@
-import body_corporate_cleaning_img from "../assets/service_images/body_corporate_cleaning_sample.jpeg"
-import office_cleaning_img from "../assets/service_images/office_cleaning_sample.jpeg"
-import garden_cleaning_img from "../assets/service_images/garden_cleaning_sample.jpeg"
-import high_pressure_cleaning_img from "../assets/service_images/high_pressure_cleaning_sample.jpeg"
-import window_cleaning_img from "../assets/service_images/window_cleaning_sample.jpeg"
-import carpert_cleaning_img from "../assets/service_images/carpert_cleaning_sample.jpeg"
+import body_corporate_cleaning_img from "../assets/service_images/body_corporate_cleaning_sample.webp"
+import office_cleaning_img from "../assets/service_images/office_cleaning_sample.webp"
+import garden_cleaning_img from "../assets/service_images/garden_cleaning_sample.webp"
+import high_pressure_cleaning_img from "../assets/service_images/high_pressure_cleaning_sample.webp"
+import window_cleaning_img from "../assets/service_images/window_cleaning_sample.webp"
+import carpert_cleaning_img from "../assets/service_images/carpert_cleaning_sample.webp"
 import ContactButton from '../components/ContactButton';
 
 const services = [
