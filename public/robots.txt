@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+# Sitemaps can be referenced here:
+Sitemap: https://www.greenscensolutions.com.au/sitemap.xml

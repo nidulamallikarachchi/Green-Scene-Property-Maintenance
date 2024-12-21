@@ -3,10 +3,66 @@ import commercial_cleaning from "../assets/commercial_cleaning.jpg"
 import industrial_cleaning from "../assets/industrial_cleaning.webp"
 import residential_cleaning from "../assets/residential_cleaning.webp"
 import { Link } from 'react-router-dom'
+import { Helmet } from "react-helmet";
 
 const Home = () => {
+
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Green Scene Property Maintenance",
+        "description": "Industry leaders in property cleaning and maintenance for over 5 years, serving residential, commercial, and industrial clients across Melbourne.",
+        "image": "https://www.yourdomain.com/path/to/logo-or-image.jpg", // Replace with a real image URL
+        "telephone": "045 455 034",
+        "email": "service.greenscene@outlook.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Melbourne",
+            "addressRegion": "VIC",
+            "addressCountry": "Australia"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Our Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Residential Cleaning",
+                        "description": "Keep your home spotless with our tailored cleaning solutions."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Commercial Maintenance",
+                        "description": "Ensure your business environment is clean and well-maintained."
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Industrial Services",
+                        "description": "Reliable maintenance services for industrial facilities."
+                    }
+                }
+            ]
+        }
+    };
+
     return (
         <div className="container mx-auto mt-10 text-center">
+
+            {/* Helmet for injecting structured data into <head> */}
+            <Helmet>
+                <script type="application/ld+json">
+                    {JSON.stringify(structuredData)}
+                </script>
+            </Helmet>
+
             {/* Hero Section */}
             <div className="relative">
                 <img
