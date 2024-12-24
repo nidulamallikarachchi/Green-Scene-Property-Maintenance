@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import property1 from "../assets/property_images/property_1.png";
 import property2 from "../assets/property_images/property_2.jpg";
 import property3 from "../assets/property_images/property_3.png";
@@ -13,6 +14,7 @@ const properties = [
     { id: 1, image: property1, address: addresses[0] },
     { id: 2, image: property2, address: addresses[1] },
     { id: 3, image: property3, address: addresses[2] },
+    { id: 4, image: property1, address: addresses[0] },
 ];
 
 const Property = () => {
@@ -28,11 +30,23 @@ const Property = () => {
                 </p>
 
                 {/* Property Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <motion.div
+                    className="grid grid-cols-1 md:grid-cols-3 gap-5"
+                    initial="hidden"
+                    animate="visible"
+                    variants={{
+                        hidden: { opacity: 0, y: 50 },
+                        visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.2 } }
+                    }}
+                >
                     {properties.map((property) => (
-                        <div
+                        <motion.div
                             key={property.id}
                             className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-200"
+                            variants={{
+                                hidden: { opacity: 0, y: 50 },
+                                visible: { opacity: 1, y: 0 }
+                            }}
                         >
                             {/* Property Image */}
                             <img
@@ -46,9 +60,9 @@ const Property = () => {
                                     {property.address}
                                 </p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </div>
     );

@@ -1,9 +1,10 @@
-import body_corporate_cleaning_img from "../assets/service_images/body_corporate_cleaning_sample.webp"
-import office_cleaning_img from "../assets/service_images/office_cleaning_sample.webp"
-import garden_cleaning_img from "../assets/service_images/garden_cleaning_sample.webp"
-import high_pressure_cleaning_img from "../assets/service_images/high_pressure_cleaning_sample.webp"
-import window_cleaning_img from "../assets/service_images/window_cleaning_sample.webp"
-import carpert_cleaning_img from "../assets/service_images/carpert_cleaning_sample.webp"
+import { motion } from "framer-motion";
+import body_corporate_cleaning_img from "../assets/service_images/body_corporate_cleaning_sample.webp";
+import office_cleaning_img from "../assets/service_images/office_cleaning_sample.webp";
+import garden_cleaning_img from "../assets/service_images/garden_cleaning_sample.webp";
+import high_pressure_cleaning_img from "../assets/service_images/high_pressure_cleaning_sample.webp";
+import window_cleaning_img from "../assets/service_images/window_cleaning_sample.webp";
+import carpert_cleaning_img from "../assets/service_images/carpert_cleaning_sample.webp";
 import ContactButton from '../components/ContactButton';
 
 const services = [
@@ -54,10 +55,24 @@ const Services = () => {
             <p className="text-lg mt-4 text-gray-700 text-center">
                 Explore the wide range of property maintenance services we offer.
             </p>
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <motion.div
+                className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                initial="hidden"
+                animate="visible"
+                variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.2 } }
+                }}
+            >
                 {services.map((service, index) => (
                     <Link to={service.route} key={index}>
-                        <div className="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <motion.div
+                            className="bg-white shadow-md rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+                            variants={{
+                                hidden: { opacity: 0, y: 50 },
+                                visible: { opacity: 1, y: 0 }
+                            }}
+                        >
                             <img
                                 src={service.image}
                                 alt={service.title}
@@ -67,10 +82,10 @@ const Services = () => {
                                 <h2 className="text-xl font-semibold text-blue-600">{service.title}</h2>
                                 <p className="text-gray-700 mt-2">{service.description}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     </Link>
                 ))}
-            </div>
+            </motion.div>
         </div>
     );
 };
